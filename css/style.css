@@ -1,16 +1,37 @@
 /*************** COMMON/CONTAINER *****************/
-
+.dashed{
+    border: dashed 1px red;
+}
 
 
 
 /************* HEADER *************/
 
+.nav-fixed{
+    height: 5rem;
+}
 
 
 
 
 /************* MAIN *************/
 
+.content{
+    height: calc(100vh - 5rem);
+}
+
+.side-bar{
+    width: 8rem;
+    height: calc(100vh - 5rem);
+    background-color: black;
+    background-image: url(../img/sidebar-bg.png);
+    align-content: space-between;
+}
+
+.center-content{
+    width: calc(100% - 8rem);
+    background-color: blue;
+}
 
 
 
