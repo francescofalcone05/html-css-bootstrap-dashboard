@@ -3,14 +3,40 @@
     border: dashed 1px red;
 }
 
+.my_w{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.my_fs{
+    font-size: 0.8rem;
+}
 
 
 /************* HEADER *************/
 
 .nav-fixed{
     height: 5rem;
+    width: 100%;
 }
 
+.little-logo{
+    width: 3rem;
+    height: 3rem;
+    margin-top: -20px;
+    display: none;
+}
+
+.logo-container{
+    width: 15%;
+}
+
+.search-container{
+    width: 70%;
+}
+.icons-container{
+    width: 15%;
+}
 
 
 
@@ -25,13 +51,30 @@
     height: calc(100vh - 5rem);
     background-color: black;
     background-image: url(../img/sidebar-bg.png);
-    align-content: space-between;
+}
+
+.top-side{
+    height: 10rem;
+}
+
+.down-side{
+    height: 3rem;
 }
 
 .center-content{
     width: calc(100% - 8rem);
-    background-color: blue;
 }
+
+
+
+
+
+
+
+/* left colomn */
+
+/* right colomn */
+
 
 
 
@@ -47,17 +90,57 @@
 
 
 @media screen and (max-width: 1200px) {
+    .logo-container{
+        width: 10%;
+    }
 
+    .search-container{
+        width: 80%;
+    }
+    .icons-container{
+        width: 10%;
+    }
+
+    .big-logo{
+        display: none;
+    }
+    .little-logo{
+        display: unset;
+    }
+
+    .icons-hide{
+        display: none;
+    }
+
+
+
+    .side-bar{
+        width: 2rem;
+
+    }
+
+    .top-side span{
+        display: none;
+    }
+
+    .down-side span{
+        display: none;
+    }
+
+    .center-content{
+        width: calc(100% - 2rem);
+    }
 }
 
 @media screen and (max-width: 992px) {
 
+
 }
 
 @media screen and (max-width: 768px) {
- 
+
 }
 
 @media screen and (max-width: 576px) {
- 
+
 }

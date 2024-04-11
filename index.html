@@ -11,32 +11,40 @@
 </head>
 <body class="vh-100">
     <!-- inizio header -->
-    <header>
-        <section class="nav-fixed">
-            <header class="py-4 text-bg-light">
-                <div class="container-fluid">
-                  <div class="d-flex flex-wrap align-items-center justify-content-between ">
-                    <img src="./img/logo.svg" alt="">
+    <header class="py-4 text-bg-light nav-fixed">
+        <div class="container-fluid">
+          <div class="d-flex align-items-center justify-content-between ">
+            <div class="logo-container">
+              <img class="big-logo" src="./img/logo.svg" alt="">
+              <img class="little-logo" src="./img/mobile-logo.png" alt="">
+            </div>
             
 
+            <div class="search-container">
+              <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 w-100" role="search">
+                <input type="search" class="form-control form-control-dark text-dark bg-light w-100" placeholder="Search..." aria-label="Search">
+              </form>
+            </div>
             
-                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 w-50" role="search">
-                      <input type="search" class="form-control form-control-dark text-dark bg-light w-100" placeholder="Search..." aria-label="Search">
-                    </form>
-            
-                    <div class="text-end">
-                        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                            <li><i class="fa-light fa-list-ul"></i></li>
-                            <li><a href="#" class="nav-link px-2 text-secondary">Features</a></li>
-                            <li><a href="#" class="nav-link px-2 text-secondary">Pricing</a></li>
-                            <li><a href="#" class="nav-link px-2 text-secondary">FAQs</a></li>
-                          </ul>
-                    </div>
-                  </div>
-                </div>
-              </header>
-        </section>
-
+            <div class="text-end icons-container">
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li class="icons-hide"><a href="#" class="nav-link px-3 text-secondary"><i class="fa-solid fa-list-ul"></i></a></li>
+                    <li class="icons-hide"><a href="#" class="nav-link px-3 text-secondary"><i class="fa-solid fa-circle-question"></i></a></li>
+                    <li class="icons-hide"><a href="#" class="nav-link px-3 text-secondary"><i class="fa-solid fa-ellipsis-vertical"></i></a></li>
+                    <li><a href="#" class="nav-link p-1"><div class="btn-group">
+                      <button type="button" class="p-0 btn btn-light text-warning dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                        <i class="fa-solid fa-bell"></i>
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-end dropdown-menu-start">
+                        <li><button class="dropdown-item" type="button">Action</button></li>
+                        <li><button class="dropdown-item" type="button">Another action</button></li>
+                        <li><button class="dropdown-item" type="button">Something else here</button></li>
+                      </ul>
+                    </div></a></li>
+                  </ul>
+            </div>
+          </div>
+        </div>
     </header>
     <!-- fine header -->
 
@@ -44,15 +52,212 @@
     <main>
         <section class="content d-flex">
 
-            <div class="side-bar d-flex flex-column align-content-between text-light">
-                <div class="top-side dashed">
-                    ciao
-
+            <!-- side-bar -->
+            <div class="side-bar d-flex flex-column flex-nowrap justify-content-between text-light">
+                <div class="top-side">
+                    <div class="mt-4 home"><i class="px-2 py-3 fa-solid fa-house"></i><span class="px-1 py-3">Home</span></div>
+                    <div class="statistics"><i class="px-2 py-3 fa-solid fa-chart-simple"></i><span class="px-1 py-3">Stats</span> </div>
+                    <div class="signal"><i class="px-2 py-3 fa-solid fa-signal"></i><span class="px-1 py-3">Signals</span> </div>
                 </div>
-                <div class="down-side dashed">ciao</div>
+
+                <div class="down-side">
+                    <div class="admin"><i class="px-2 py-3 fa-solid fa-gear"></i><span class="px-1 py-3">Admin</span> </div>
+                </div>
             </div>
 
-            <div class="center-content">
+            <!-- contenuto centrale -->
+            <div class="center-content overflow-auto">
+                <div class="container-fluid bg-primary text-light">
+                    <div class="row">
+                        <div class="col-xl-5 col-md-4">
+                            <div class="badges-cont box py-3">
+                                <h2 class="d-inline-block">Boolean</h2><span class="badge border ms-2 rounded-pill text-bg-primary">Prime blaze</span>
+                                <div>
+                                  <span class="badge border ms-2 rounded-pill text-bg-primary">Prime blaze</span>
+                                  <span><i class="ms-1 fa-solid fa-angles-right"></i></span>
+                                  <span class="badge border ms-2 rounded-pill text-bg-primary d-xl-none d-inline-block">+</span>
+                                  <span class="badge border ms-2 rounded-pill text-bg-primary d-none d-xl-inline-block">Prime blaze</span>
+                                  <span class="badge border ms-2 rounded-pill text-bg-primary d-none d-xl-inline-block">Prime blaze</span>
+                                  <span class="badge border ms-2 rounded-pill text-bg-primary d-none d-xl-inline-block">Prime blaze</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4">
+                            <div class="box py-3">
+                                <p>Studenti online negli ultimi 30 minuti</p>
+                                <h2>125</h2>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-4">
+                            <div class="box py-3">
+                                <p>Nuovo studente</p><span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="container-fluid mt-2">
+                    <div class="row">
+                        <!-- left col -->
+                        <div class="col-xl-8 col-md-12">
+                            <div class="box">
+                                <div><h3 class="p-1 m-0 fs-5 border">Prossime Classi</h3></div>
+                                <div class="border">
+                                    <table class="my_fs table table-borderless">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col" style="width: 60%;">Nome</th>
+                                            <th scope="col">Data inizio</th>
+                                            <th scope="col">Roi</th>
+                                            <th scope="col">Stato</th>
+                                            <th scope="col">Azioni</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row"><img class="my_w" src="./img/class-avatar.jpg" alt=""><span class="ps-2">Classe 75</span></th>
+                                            <td>15 Febbraio 2021</td>
+                                            <td>20%</td>
+                                            <td><h6><span class="badge text-bg-success">Done</span></h6></td>
+                                            <td>Otto</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row"><img class="my_w" src="./img/class-avatar.jpg" alt=""><span class="ps-2">Classe 76</span></th>
+                                            <td>16 Febbraio 2021</td>
+                                            <td>20%</td>
+                                            <td><h6><span class="badge text-bg-success">Done</span></h6></td>
+                                            <td>Otto</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row"><img class="my_w" src="./img/class-avatar.jpg" alt=""><span class="ps-2">Classe 77</span></th>
+                                            <td>17 Febbraio 2021</td>
+                                            <td>20%</td>
+                                            <td><h6><span class="badge text-light bg-warning">Process</span></h6></td>
+                                            <td>Otto</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row"><img class="my_w" src="./img/class-avatar.jpg" alt=""><span class="ps-2">Classe 78</span></th>
+                                            <td>18 Febbraio 2021</td>
+                                            <td>20%</td>
+                                            <td><h6><span class="badge text-bg-success">Done</span></h6></td>
+                                            <td>Otto</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row"><img class="my_w" src="./img/class-avatar.jpg" alt=""><span class="ps-2">Classe 79</span></th>
+                                            <td>19 Febbraio 2021</td>
+                                            <td>20%</td>
+                                            <td><h6><span class="badge text-light bg-danger">Failed</span></h6></td>
+                                            <td>Otto</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row"><img class="my_w" src="./img/class-avatar.jpg" alt=""><span class="ps-2">Classe 80</span></th>
+                                            <td>20 Febbraio 2021</td>
+                                            <td>20%</td>
+                                            <td><h6><span class="badge text-bg-success">Done</span></h6></td>
+                                            <td>Otto</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row"><img class="my_w" src="./img/class-avatar.jpg" alt=""><span class="ps-2">Classe 81</span></th>
+                                            <td>21 Febbraio 2021</td>
+                                            <td>20%</td>
+                                            <td><h6><span class="badge text-light bg-danger">Failed</span></h6></td>
+                                            <td>Otto</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row"><img class="my_w" src="./img/class-avatar.jpg" alt=""><span class="ps-2">Classe 82</span></th>
+                                            <td>22 Febbraio 2021</td>
+                                            <td>20%</td>
+                                            <td><h6><span class="badge text-bg-success">Done</span></h6></td>
+                                            <td>Otto</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+
+                                <!-- FAQ section -->
+                                <div><h3 class="p-1 m-0 fs-5 border mt-3">F.A.Q.</h3></div>
+                                <div class="accordion accordion-flush border" id="accordionFlushExample">
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        Come aggiungere un nuovo studente?
+                                      </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                      <div class="accordion-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, modi? Rem ducimus architecto consequuntur! Blanditiis quos sequi rem quae doloribus alias asperiores natus porro nobis odio consequuntur veniam consectetur suscipit aliquam esse vel vitae recusanda.</div>
+                                    </div>
+                                  </div>
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        Come posso accedere alle informazionii del mio account?
+                                      </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                      <div class="accordion-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, modi? Rem ducimus architecto consequuntur! Blanditiis quos sequi rem quae doloribus alias asperiores natus porro nobis odio consequuntur veniam consectetur suscipit aliquam esse vel vitae recusanda.</div>
+                                    </div>
+                                  </div>
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                        Posso usare questa dashboard da mobile?
+                                      </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                      <div class="accordion-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, modi? Rem ducimus architecto consequuntur! Blanditiis quos sequi rem quae doloribus alias asperiores natus porro nobis odio consequuntur veniam consectetur suscipit aliquam esse vel vitae recusanda.</div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- right col -->
+                        <div class="col-xl-4 col-md-12">
+                            <div class="box">
+
+                              <!-- todo section -->
+                                <div><h3 class="p-1 m-0 fs-5 border">Todo</h3></div>
+                                <div>
+                                    <div class="card w-100">
+                                        <ul class="list-group list-group-flush">
+                                          <li class="list-group-item"> <input type="checkbox" name="done" id="">
+                                            Kickoff nuove classi</li>
+                                          <li class="list-group-item">
+                                            <input type="checkbox" name="done" id="">
+                                            Lezione su Bootstrap 5 in classe #125</li>
+                                          <li class="list-group-item">
+                                            <input type="checkbox" name="done" id="">
+                                            Controllare sername github studenti</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                    
+                                    <!-- statistics section -->
+                                    <div class=" mt-3">
+                                      <div class="card w-100 p-2">
+                                        <img src="./img/stats.jpeg" class="card-img-top border" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Utenti attivi</h5>
+                                          <p class="card-text">lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                          <li class="list-group-item">Gennaio 1200</li>
+                                          <li class="list-group-item">Febbraio 800</li>
+                                          <li class="list-group-item">Marzo 1500</li>
+                                        </ul>
+                                        <div class="card-body">
+                                          <a href="#" class="card-link">Visualizza report approfondito</a>                   
+                                        </div>
+                                      </div>
+
+                                    </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
