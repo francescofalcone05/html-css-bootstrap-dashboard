@@ -1,7 +1,4 @@
 /*************** COMMON/CONTAINER *****************/
-.dashed{
-    border: dashed 1px red;
-}
 
 .my_w{
     width: 1.5rem;
@@ -10,6 +7,26 @@
 
 .my_fs{
     font-size: 0.8rem;
+}
+
+.hover-blue:hover{
+    background-color: blue;
+
+}
+
+.hover-white:hover{
+    background-color: white;
+
+}
+
+.hover-red:hover{
+    background-color: red;
+
+}
+
+.hover-grey:hover{
+    background-color: grey;
+
 }
 
 
@@ -24,7 +41,6 @@
     width: 3rem;
     height: 3rem;
     margin-top: -20px;
-    display: none;
 }
 
 .logo-container{
@@ -37,7 +53,6 @@
 .icons-container{
     width: 15%;
 }
-
 
 
 /************* MAIN *************/
@@ -67,24 +82,6 @@
 
 
 
-
-
-
-
-/* left colomn */
-
-/* right colomn */
-
-
-
-
-
-/************* FOOTER *************/
-
-
-
-
-
 /************* RESPONSIVE *************/
 
 
@@ -101,35 +98,15 @@
         width: 10%;
     }
 
-    .big-logo{
-        display: none;
-    }
-    .little-logo{
-        display: unset;
-    }
-
-    .icons-hide{
-        display: none;
-    }
-
-
-
     .side-bar{
         width: 2rem;
 
     }
 
-    .top-side span{
-        display: none;
-    }
-
-    .down-side span{
-        display: none;
-    }
-
     .center-content{
         width: calc(100% - 2rem);
     }
+
 
 
 }

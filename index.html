@@ -15,8 +15,8 @@
         <div class="container-fluid">
           <div class="d-flex align-items-center justify-content-between ">
             <div class="logo-container">
-              <img class="big-logo mb-3" src="./img/logo.svg" alt="">
-              <img class="little-logo" src="./img/mobile-logo.png" alt="">
+              <img class="d-none d-xl-inline big-logo mb-3" src="./img/logo.svg" alt="">
+              <img class="d-xl-none little-logo" src="./img/mobile-logo.png" alt="">
             </div>
 
 
@@ -28,9 +28,9 @@
 
             <div class="text-end icons-container">
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-3 justify-content-center">
-                    <li class="icons-hide"><a href="#" class="nav-link px-3 text-secondary"><i class="fa-solid fa-list-ul"></i></a></li>
-                    <li class="icons-hide"><a href="#" class="nav-link px-3 text-secondary"><i class="fa-solid fa-circle-question"></i></a></li>
-                    <li class="icons-hide"><a href="#" class="nav-link px-3 text-secondary"><i class="fa-solid fa-ellipsis-vertical"></i></a></li>
+                    <li class="d-none d-xl-inline"><a href="#" class="nav-link px-3 text-secondary"><i class="fa-solid fa-list-ul"></i></a></li>
+                    <li class="d-none d-xl-inline"><a href="#" class="nav-link px-3 text-secondary"><i class="fa-solid fa-circle-question"></i></a></li>
+                    <li class="d-none d-xl-inline"><a href="#" class="nav-link px-3 text-secondary"><i class="fa-solid fa-ellipsis-vertical"></i></a></li>
                     <li><a href="#" class="nav-link p-1"><div class="btn-group">
                       <button type="button" class="p-0 btn btn-light text-warning dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
                         <i class="fa-solid fa-bell"></i>
@@ -55,18 +55,19 @@
             <!-- side-bar -->
             <div class="side-bar d-flex flex-column flex-nowrap justify-content-between text-light">
                 <div class="top-side">
-                    <div class="mt-4 home"><i class="px-2 py-3 fa-solid fa-house"></i><span class="px-1 py-3">Home</span></div>
-                    <div class="statistics"><i class="px-2 py-3 fa-solid fa-chart-simple"></i><span class="px-1 py-3">Stats</span> </div>
-                    <div class="signal"><i class="px-2 py-3 fa-solid fa-signal"></i><span class="px-1 py-3">Signals</span> </div>
+                    <div class="hover-grey mt-4 home"><i class="px-2 py-3 fa-solid fa-house"></i><span class="d-none d-xl-inline px-1 py-3">Home</span></div>
+                    <div class="hover-grey statistics"><i class="px-2 py-3 fa-solid fa-chart-simple"></i><span class="d-none d-xl-inline px-1 py-3">Stats</span> </div>
+                    <div class="hover-grey signal"><i class="px-2 py-3 fa-solid fa-signal"></i><span class="d-none d-xl-inline px-1 py-3">Signals</span> </div>
                 </div>
 
                 <div class="down-side">
-                    <div class="admin"><i class="px-2 py-3 fa-solid fa-gear"></i><span class="px-1 py-3">Admin</span> </div>
+                    <div class="hover-grey admin"><i class="px-2 py-3 fa-solid fa-gear"></i><span class="d-none d-xl-inline px-1 py-3">Admin</span> </div>
                 </div>
             </div>
 
-            <!-- contenuto centrale -->
+            <!-- container center content -->
             <div class="center-content overflow-auto">
+                <!-- blue center content -->
                 <div class="container-fluid bg-primary text-light">
                     <div class="row">
                         <div class="col-xl-5 col-md-4 order-2 order-md-0">
@@ -221,19 +222,21 @@
 
                 </div>
 
+                <!-- center columns -->
                 <div class="container-fluid mt-2">
                     <div class="row">
                         <!-- left col -->
                         <div class="col-xl-8 col-md-12">
                             <div class="box">
+                                <!-- table  -->
                                 <div><h3 class="p-1 m-0 fs-5 border">Prossime Classi</h3></div>
                                 <div class="border">
                                     <table class="my_fs table table-borderless">
                                         <thead>
                                           <tr>
                                             <th scope="col" style="width: 60%;">Nome</th>
-                                            <th scope="col">Data inizio</th>
-                                            <th scope="col">Roi</th>
+                                            <th scope="col"><span class="d-none d-md-inline-block">Data inizio</span></th>
+                                            <th scope="col"><span class="d-none d-md-inline-block">Roi</span></th>
                                             <th scope="col">Stato</th>
                                             <th scope="col">Azioni</th>
                                           </tr>
@@ -241,59 +244,59 @@
                                         <tbody>
                                           <tr>
                                             <th scope="row"><img class="my_w" src="./img/class-avatar.jpg" alt=""><span class="ps-2">Classe 75</span></th>
-                                            <td>15 Febbraio 2021</td>
-                                            <td>20%</td>
+                                            <td><span class="d-none d-md-inline-block">15 Febbraio 2021</span></td>
+                                            <td><span class="d-none d-md-inline-block">20%</span></td>
                                             <td><h6><span class="badge text-bg-success">Done</span></h6></td>
-                                            <td>Otto</td>
+                                            <td><span class="hover-blue border mx-1 p-1"><i class="fa-solid fa-pencil"></i></span class="hover-red"><i class="border mx-1 p-1 fa-solid fa-trash-can"></i><span></span></td>
                                           </tr>
                                           <tr>
                                             <th scope="row"><img class="my_w" src="./img/class-avatar.jpg" alt=""><span class="ps-2">Classe 76</span></th>
-                                            <td>16 Febbraio 2021</td>
-                                            <td>20%</td>
+                                            <td><span class="d-none d-md-inline-block">16 Febbraio 2021</span></td>
+                                            <td><span class="d-none d-md-inline-block">20%</span></td>
                                             <td><h6><span class="badge text-bg-success">Done</span></h6></td>
-                                            <td>Otto</td>
+                                            <td><span class="hover-blue border mx-1 p-1"><i class="fa-solid fa-pencil"></i></span class="hover-red"><i class="border mx-1 p-1 fa-solid fa-trash-can"></i><span></span></td>
                                           </tr>
                                           <tr>
                                             <th scope="row"><img class="my_w" src="./img/class-avatar.jpg" alt=""><span class="ps-2">Classe 77</span></th>
-                                            <td>17 Febbraio 2021</td>
-                                            <td>20%</td>
+                                            <td><span class="d-none d-md-inline-block">17 Febbraio 2021</span></td>
+                                            <td><span class="d-none d-md-inline-block">20%</span></td>
                                             <td><h6><span class="badge text-light bg-warning">Process</span></h6></td>
-                                            <td>Otto</td>
+                                            <td><span class="hover-blue border mx-1 p-1"><i class="fa-solid fa-pencil"></i></span class="hover-red"><i class="border mx-1 p-1 fa-solid fa-trash-can"></i><span></span></td>
                                           </tr>
                                           <tr>
                                             <th scope="row"><img class="my_w" src="./img/class-avatar.jpg" alt=""><span class="ps-2">Classe 78</span></th>
-                                            <td>18 Febbraio 2021</td>
-                                            <td>20%</td>
+                                            <td><span class="d-none d-md-inline-block">18 Febbraio 2021</span></td>
+                                            <td><span class="d-none d-md-inline-block">20%</span></td>
                                             <td><h6><span class="badge text-bg-success">Done</span></h6></td>
-                                            <td>Otto</td>
+                                            <td><span class="hover-blue border mx-1 p-1"><i class="fa-solid fa-pencil"></i></span class="hover-red"><i class="border mx-1 p-1 fa-solid fa-trash-can"></i><span></span></td>
                                           </tr>
                                           <tr>
                                             <th scope="row"><img class="my_w" src="./img/class-avatar.jpg" alt=""><span class="ps-2">Classe 79</span></th>
-                                            <td>19 Febbraio 2021</td>
-                                            <td>20%</td>
+                                            <td><span class="d-none d-md-inline-block">19 Febbraio 2021</span></td>
+                                            <td><span class="d-none d-md-inline-block">20%</span></td>
                                             <td><h6><span class="badge text-light bg-danger">Failed</span></h6></td>
-                                            <td>Otto</td>
+                                            <td><span class="hover-blue border mx-1 p-1"><i class="fa-solid fa-pencil"></i></span class="hover-red"><i class="border mx-1 p-1 fa-solid fa-trash-can"></i><span></span></td>
                                           </tr>
                                           <tr>
                                             <th scope="row"><img class="my_w" src="./img/class-avatar.jpg" alt=""><span class="ps-2">Classe 80</span></th>
-                                            <td>20 Febbraio 2021</td>
-                                            <td>20%</td>
+                                            <td><span class="d-none d-md-inline-block">20 Febbraio 2021</span></td>
+                                            <td><span class="d-none d-md-inline-block">20%</span></td>
                                             <td><h6><span class="badge text-bg-success">Done</span></h6></td>
-                                            <td>Otto</td>
+                                            <td><span class="hover-blue border mx-1 p-1"><i class="fa-solid fa-pencil"></i></span class="hover-red"><i class="border mx-1 p-1 fa-solid fa-trash-can"></i><span></span></td>
                                           </tr>
                                           <tr>
                                             <th scope="row"><img class="my_w" src="./img/class-avatar.jpg" alt=""><span class="ps-2">Classe 81</span></th>
-                                            <td>21 Febbraio 2021</td>
-                                            <td>20%</td>
+                                            <td><span class="d-none d-md-inline-block">21 Febbraio 2021</span></td>
+                                            <td><span class="d-none d-md-inline-block">20%</span></td>
                                             <td><h6><span class="badge text-light bg-danger">Failed</span></h6></td>
-                                            <td>Otto</td>
+                                            <td><span class="hover-blue border mx-1 p-1"><i class="fa-solid fa-pencil"></i></span class="hover-red"><i class="border mx-1 p-1 fa-solid fa-trash-can"></i><span></span></td>
                                           </tr>
                                           <tr>
                                             <th scope="row"><img class="my_w" src="./img/class-avatar.jpg" alt=""><span class="ps-2">Classe 82</span></th>
-                                            <td>22 Febbraio 2021</td>
-                                            <td>20%</td>
+                                            <td><span class="d-none d-md-inline-block">22 Febbraio 2021</span></td>
+                                            <td><span class="d-none d-md-inline-block">20%</span></td>
                                             <td><h6><span class="badge text-bg-success">Done</span></h6></td>
-                                            <td>Otto</td>
+                                            <td><span class="hover-blue border mx-1 p-1"><i class="fa-solid fa-pencil"></i></span class="hover-red"><i class="border mx-1 p-1 fa-solid fa-trash-can"></i><span></span></td>
                                           </tr>
                                         </tbody>
                                       </table>
@@ -375,7 +378,6 @@
                                           <a href="#" class="card-link">Visualizza report approfondito</a>
                                         </div>
                                       </div>
-
                                     </div>
 
                             </div>
@@ -389,8 +391,5 @@
     </main>
     <!-- fine main content -->
 
-    <!-- inizio footer -->
-    <footer></footer>
-    <!--fine footer  -->
 </body>
 </html>
